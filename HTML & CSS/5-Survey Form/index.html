@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required/></label>
+      <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required/></label>
+      <label for="number" id="number-label">Age(optional) <input type="number" id="number" min="13" max="120" placeholder="Age"/></label>
+      <label for="dropdown">Which option best describes your current role?
+        <select id="dropdown">
+          <option value="" >Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+Would you recommend freeCodeCamp to a friend?
+
+Definitely
+Maybe
+Not sure
+      <label>Would you recommend freeCodeCamp to a friend?
+        <label for="def"><input type="radio" id="def" class="inline" name="rec" value="Definitely"/> Definitely</label>
+        <label for="may"><input type="radio" id="may" class="inline"  name="rec" value="maybe"/> Maybe</label>
+        <label for="not"><input type="radio" id="not" class="inline" name="rec" value="not-sure"/> Not sure</label>
+      </label>
+      <label for="drop">What is your favorite feature of freeCodeCamp?
+        <select id="drop">
+          <option value="" >Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </label>
+      <label>
+        What would you like to see improved? (Check all that apply)
+        <label for="fp"><input type="checkbox" id="fp" value="front-end-project"/> Front-end Projects</label>
+        <label for="bp"><input type="checkbox" id="bp" value="Back-end Projects"/> Back-end Projects</label>
+        <label for="dv"><input type="checkbox" id="dv" value="Data Visualization"/> Data Visualization</label>
+      <label for="Ch"><input type="checkbox" id="Ch" value="Challenges"/> Challenges</label>
+      <label for="os"><input type="checkbox" id="os" value="Open Source Community"/> Open Source Community</label>
+      <label for="gr"><input type="checkbox" id="Gr" value="Gitter help rooms"/> Gitter help rooms</label>
+      <label for="vid"><input type="checkbox" id="vid" value="Videos"/> Videos</label>
+      <label for="CM"><input type="checkbox" id="CM" value="City Meetups"/> City Meetups</label>
+      <label for="wk"><input type="checkbox" id="wk" value="Wiki"/> Wiki</label>
+      <label for="Fm"><input type="checkbox" id="Fm" value="Forum"/>Forum</label>
+      <label for="ac"><input type="checkbox" id="ac" value="Additional Courses"/>Additional Courses</label>
+      </label>
+      <label for="comment">Any comments or suggestions?<textarea pacehoder="Enter your comment here..." id="comment"></textarea></label>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
